@@ -15,30 +15,6 @@ public class MailConfig {
     private Map<String, Boolean> additionalHeaders;
     private Credentials credentials;
 
-    public List<String> getDefaultRecipients() {
-        return defaultRecipients;
-    }
-
-    public void setDefaultRecipients(List<String> defaultRecipients) {
-        this.defaultRecipients = defaultRecipients;
-    }
-
-    public Map<String, Boolean> getAdditionalHeaders() {
-        return additionalHeaders;
-    }
-
-    public void setAdditionalHeaders(Map<String, Boolean> additionalHeaders) {
-        this.additionalHeaders = additionalHeaders;
-    }
-
-    public Credentials getCredentials() {
-        return credentials;
-    }
-
-    public void setCredentials(Credentials credentials) {
-        this.credentials = credentials;
-    }
-
     public static class Credentials {
         private String username;
         private String password;
@@ -91,6 +67,31 @@ public class MailConfig {
 
     public void setFrom(String from) {
         this.from = from;
+    }
+
+
+    public List<String> getDefaultRecipients() {
+        return defaultRecipients;
+    }
+
+    public void setDefaultRecipients(List<String> defaultRecipients) {
+        this.defaultRecipients = defaultRecipients;
+    }
+
+    public Map<String, Boolean> getAdditionalHeaders() {
+        return additionalHeaders;
+    }
+
+    public void setAdditionalHeaders(Map<String, Boolean> additionalHeaders) {
+        this.additionalHeaders = additionalHeaders;
+    }
+
+    public Credentials getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(Credentials credentials) {
+        this.credentials = credentials;
     }
 
     @Override
